@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Hanalei-Fill, Arial';
+    src: url(fonts/Hanalei_Fill/HanaleiFill-Regular.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Hanalei-Fill, Arial';
+
+}
+
+header {
+    background-color: black;
+    margin: 10px;
+}
+
+button {
+    font-size: xx-large;
+}
+
+
+@media only screen and (orientation: portrait) {
+    header {
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        border: 20px solid black;
+        background-color: black;
+        margin: 0px;
+        color: rgb(255, 153, 0);
+        margin-bottom: 10px;
+    }
+
+    body {
+        background-color: gray;
+    }
+
+
+    div.borgir {
+
+        height: 100%;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 50px;
+        background-color: gray;
+        color: rgb(255, 153, 0);
+        text-align: center;
+        height: 500px;
+
+    }
+
+    .navItem {
+        color: rgb(255, 153, 0);
+        text-decoration: none;
+        display: flex;
+        height: 30%;
+        text-align: center;
+        text-justify: center;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(64, 65, 65);
+        padding: 5px;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .challenges {
+        display: flex;
+        width: 100%;
+        background-color: black;
+        color: rgb(255, 153, 0);
+        height: fit-content;
+    }
+
+
+
+    .challengePanel img{
+        height:100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
